@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-
+import Home from './components/home';
+import Body from './components/body';
+import Companies from './components/companies';
+import Body2 from './components/body-2';
+import Body2Container from './components/body-2-container';
+import Result from './components/result';
+import BelowResult from './components/below-result';
+import Footer from './components/footer';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App overflow-hidden">
+      <Home />
+      <Body />
+      <Companies />
+      <Body2 />
+      <Body2Container />
+      <Result />
+      <BelowResult />
+      <Footer />
     </div>
   );
 }
